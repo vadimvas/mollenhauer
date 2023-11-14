@@ -1,0 +1,604 @@
+
+
+html,body{
+  height: 100%;
+  margin: 0;
+ 
+}
+.wrapper{
+  overflow: hidden;
+}
+
+
+
+.header{
+  width: 100%;
+  height: 600px;
+  background: url(../img/aerial-1.png) no-repeat 50%/cover;
+  position: relative;
+  
+}
+.header__mask{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #06255B 0%, rgba(6, 37, 91, 0.00) 100%);
+}
+
+/* Панель с логотипом и меню */
+.header__top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px;
+}
+.header__logo a img{
+  width: 15vw;
+}
+.header__menu{
+  z-index: 1;
+  background-color: #06255b60;
+  position: fixed;
+  top: 10px;
+  left: 40vw;
+  
+}
+
+.header__list {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  
+}
+.header__link {
+  text-decoration: none;
+  color: white;
+  margin-right: 12px;
+  margin-left: 20px;
+  font-size: 1.2vw;
+  
+}
+.header__link:hover{
+  color: #DA5D24;
+  transition-duration: 0.3s;
+}
+
+
+
+
+
+
+/* Верхний блок с заголовком,текстом и кнопками */
+
+.header__text{
+  height: 50%;
+  margin-left: 10vw;
+  position: relative;
+}
+h1{
+  color: white;
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 70.4px */
+  letter-spacing: -1.465px;
+  margin: 0;
+}
+.header__text p{
+  color: white;
+  font-size: 1.1vw;
+}
+.button__1,.button__2{
+  text-decoration: none;
+  font-size: 1vw;
+  padding: 10px;
+  
+}
+.button__1{
+  border: 2px solid #FFF;
+  background: rgba(6, 37, 91, 0.60);
+  color: white;
+  margin-right: 50px;
+}
+.button__2{
+  background-color: white;
+  color: #06255B;
+}
+ 
+
+  
+
+
+  
+
+
+
+
+/* Второй блок(синий) */
+.main{
+  width: 100%;
+  height: 75vw;
+  background-color: #06255B ;
+  color: white;
+  margin: -10px;
+}
+
+h2{
+  margin: 0;
+  font-size: 2vw;
+}
+.main__text{
+  padding:7vw 0 0 14vw;
+}
+.main__text p{
+  font-size: 1vw;
+}
+ 
+ 
+ 
+.grid__block{
+  width: 200vw;
+  height: 80vw;
+  background-color: white;
+  position: absolute;
+  top: 550px;
+  left: -150px;
+  transform: rotate(-45deg);
+  display:grid;
+  grid-template-columns: repeat(20,1fr);
+  grid-template-rows: repeat(20,1fr);
+  gap: 2vw;
+  padding: 30px;
+  
+}
+
+.rectangle1,.rectangle2,.rectangle3,.rectangle4,.rectangle5,.rectangle11{
+  width: 10vw;
+  height: 10vw;
+  border: 0.986px solid #D5D5D5;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle1 p,.rectangle2 p,.rectangle3 p,.rectangle4 p,.rectangle5 p,.rectangle11 p{
+  transform: rotate(45deg);
+  font-size: 1vw;
+  font-weight: 700;
+}
+.rectangle1{
+  grid-column: 6/7;
+  grid-row: 1/2;
+  position: relative;
+}
+.rectangle1:hover,.rectangle2:hover,.rectangle3:hover,.rectangle4:hover,.rectangle5:hover{
+  border:0.5px solid #DA5D24;
+  background-color: #D5D5D5;
+}
+ 
+  
+
+
+.rectangle2{
+  grid-column: 7/8;
+  grid-row: 1/2;
+
+}
+.rectangle3{
+  grid-column: 8/9;
+  grid-row: 1/2;
+}
+.rectangle4{
+  grid-column: 9/10;
+  grid-row: 1/2;
+
+}
+.rectangle6{
+  grid-column: 10/13;
+  grid-row: 1/17;
+  background-color: #F7F9FC;
+
+}
+.rectangle7{
+  width: 500px;
+  height: 500px;
+  background-color: #DA5D24;
+  opacity: 0.8;
+  position: absolute;
+  top: -8vw;
+  left: 133vw;
+  flex-shrink: 0;
+  
+}
+.rectangle8{
+  width: 8vw;
+  height: 8vw;
+  border:5px solid #DA5D24;
+  background-color: #06255B;
+  opacity: 0.8;
+  position: absolute;
+  top: -10vw;
+  left: 120vw;
+  
+}
+.rectangle9{
+  width: 6vw;
+  height: 6vw;
+  border:5px solid #06255B;
+  background-color: #06255B;
+  opacity: 0.8;
+  position: absolute;
+  top: -17vw;
+  left: 129vw;
+  
+}
+.rectangle10{
+  width: 5vw;
+  height: 5vw;
+  border:5px solid white;
+  background-color: #06255B;
+  opacity: 0.8;
+  position: absolute;
+  top: -18vw;
+  left: 120vw;
+}
+.rectangle11{
+  width: 10vw;
+  height: 10vw;
+  background-color: white;
+  position: absolute;
+  z-index: 20;
+  top: -11vw;
+  left: 0;
+  
+}
+
+  
+
+.rectangle5{
+  grid-column: 8/9;
+  grid-row: 2/3;
+  position: relative;
+  z-index: 3;
+
+}
+.rectangle-img{
+  grid-column: 7/10;
+  grid-row: 3/5;
+  padding: 25px;
+
+}
+.rectangle-img img{
+  width: 100%;
+  transform: rotate(45deg);
+}
+
+
+
+.block-3{
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  
+  position: relative;
+
+}
+.foto{
+  margin: 0px 20px;
+ 
+}
+
+.foto a img{
+  width: 100%;
+ 
+  
+}
+
+.conteiner{
+  width: 90%;
+  height: 2000px;
+  margin: auto;
+  background-color: white;
+  position: relative;
+}
+.text__conteiner{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 50px 0px;
+}
+.text__conteiner h3,.text__conteiner p{
+  width: 33%;
+  padding: 10px;
+  margin: 0;
+}
+ h3{
+  font-size: 2vw;
+}
+
+
+.mix__conteiner{
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  gap: 20px;
+}
+.foto-mix {
+  
+  grid-column:1/3 ;
+  grid-row:1/4 ;
+  overflow: hidden;
+  
+}
+.foto-mix img{
+  width: 100%;
+ 
+}
+.rele {
+  grid-column:3/4 ;
+  grid-row:1/2 ;
+}
+.title {
+  grid-column:3/4 ;
+  grid-row:2/3 ;
+}
+.title-text {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.block-lable{
+  display: flex;
+  justify-content: space-around;
+  margin: 90px 0px;
+}
+
+
+
+
+.block__orange{
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+.block__orange p{
+ 
+  padding: 0px 0px  0px 50px;
+}
+.orange{
+  width: 100%;
+  height: 70px;
+  border-top:20px solid #DA5D24;
+  border-left: 20px solid #DA5D24;
+  border-right: 20px solid #DA5D24;
+}
+.orange1{
+  width: 100%;
+  height: 70px;
+  border-bottom:20px solid #DA5D24;
+  border-left: 20px solid #DA5D24;
+  border-right: 20px solid #DA5D24;
+
+}
+
+
+
+
+
+
+.formula-1{
+  transform: rotate(45deg);
+}
+.formula-1{
+  position: absolute;
+  top: 100px;
+  left: 370px;
+  width: 12vw;
+}
+.formula-2{
+  margin: 90px 0 0 50px ;
+  transform: rotate(45deg);
+  width: 8vw;
+
+}
+
+
+/* Бургер меню */
+
+#menu {
+  display: none;
+  
+}
+
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 70px 0 20px 0;
+  cursor: pointer;
+}
+
+.bar {
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #06255B ;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+}
+
+.nav ul {
+  
+  margin-left: -200px;
+  margin-top: 70px;
+}
+
+.nav li {
+  list-style: none;
+  padding-top: 20px;
+ 
+}
+
+.nav li a {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+}
+  
+
+.nav li a:hover {
+  font-weight: bold;
+}
+
+.menu-bg, #menu {
+  top: 0;
+  left: 45vw;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: #DA5D24;
+  transition: 0.3s ease;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 420px;
+  height: 600px;
+  transform: translateX(-300px);
+  
+}
+/* Планшет */
+@media(width<=980px){
+  #menu {
+    display: block;
+    position: relative;
+    z-index: 12;
+  }
+
+  .header__logo a img{
+    width: 200px;
+  }
+  .header__list{
+    display: none;
+  }
+  .header__menu{
+    background-color: transparent;
+  }
+  h1{
+    font-size:4vw ;
+  }
+  .header__text p{
+    color: white;
+    font-size: 1.7vw;
+  }
+  h2{
+    font-size: 3vw;
+  }
+  .rectangle7{
+    width: 400px;
+    height: 400px;
+    background-color: #DA5D24;
+    opacity: 0.8;
+    position: absolute;
+    top: -15vw;
+    left: 143vw;
+  }
+  .rectangle8{
+    width: 12vw;
+    height: 12vw;
+    border:5px solid #DA5D24;
+    background-color: #06255B;
+    opacity: 0.8;
+    position: absolute;
+    top: -15vw;
+    left: 126vw;
+    
+  }
+  .rectangle9{
+    width: 9vw;
+    height: 9vw;
+    border:5px solid #06255B;
+    background-color: #06255B;
+    opacity: 0.8;
+    position: absolute;
+    top: -27vw;
+    left: 141vw;
+    
+  }
+  .rectangle10{
+    width: 6vw;
+    height: 6vw;
+    border:5px solid white;
+    background-color: #06255B;
+    opacity: 0.8;
+    position: absolute;
+    top: -25vw;
+    left: 129vw;
+  }
+
+}
+.block-director,.director{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.block-director{
+  width: 35%;
+  margin: 60px;
+  
+}
+.director{
+  margin: 40px 0;
+}
+.block-director img{
+  margin-right: 20px;
+}
+
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  background-color: #06255B;
+}
