@@ -273,24 +273,40 @@ h2{
   transform: rotate(45deg);
 }
 
+@media(width<992px){
+  .rectangle1,.rectangle2,.rectangle3,.rectangle4,.rectangle5,.rectangle11{
+    display: none;
+  }
+  .rectangle7{
+    width: 500px;
+    height: 500px;
+    background-color: #DA5D24;
+    opacity: 0.8;
+    position: absolute;
+    top: -8vw;
+    left: 33vw;
+    flex-shrink: 0;
+    
+  }
+ 
+}
+
+
+
+
+
+
 
 
 .block-3{
-
-  
   background-color: white;
-
-  
   position: relative;
-
 }
-
-
 .foto a img{
   width: 100%;
+}
  
   
-}
 
 .conteiner{
   width: 90%;
@@ -504,7 +520,7 @@ h2{
   
 }
 /* Планшет */
-@media(width<=980px){
+@media(width<992px){
   #menu {
     display: block;
     position: relative;
