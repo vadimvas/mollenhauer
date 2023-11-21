@@ -1,14 +1,5 @@
 
 
-html,body{
-  height: 100%;
-  margin: 0;
- 
-}
-.wrapper{
-  overflow: hidden;
-}
-
 
 
 .header{
@@ -595,19 +586,26 @@ h2{
  
 }
 .block-director{
-  width: 35%;
+  width: 100%;
   margin: 60px;
   
 }
 .director{
-  margin: 40px 0;
+  width: 100%;
+  
 }
 .block-director img{
-  margin-right: 20px;
+  object-fit: contain;
+  margin-right: 50px;
+ 
+}
+.title-director{
+  width: 50%;
 }
 
 
 footer{
+  height: 100px;
   display: flex;
   justify-content: space-around;
   color: white;
